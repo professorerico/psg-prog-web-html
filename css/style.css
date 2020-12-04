@@ -1,27 +1,105 @@
 /*importando folha de estilo externa
 @import "style2.css";*/
+h1{
+    text-align: center;
+    font-size: 4em;
+    font: sans-serif;
+    /*alteração do padding*/
+    padding: 15px 25px 20px 25px;
+    /*alteração da borda*/
+    border: solid 10px;
+    /*alteração da margem*/
+    margin: 25px 15px 20px 15px;
+    /*Valor tipo número com unidade de medida (comprimento)*/
+    width: 400px;
+    height: 150px;
+}
 
 h2{
     text-align: center;
-    color: blue;
-    font-size: 3em;
+    /*Valor tipo notação funcional*/
+    color: rgb(255, 217, 0);
+    /*font-size: 3em;*/
+    /*alteração da margem*/
+    /*Valor Tipo número*/
+    margin-top: 20px;
+    margin-right: 10px;
+    margin-bottom: 15px;
+    margin-left: 10px;
+    /*alteração do padding*/
+    padding-top: 15px;
+    padding-right: 30px;
+    padding-bottom: 25px;
+    padding-left: 15px;
+    /*alteração das bordas*/
+    border-top: black dashed 5px;
+    border-right: red dashed 5px;
+    border-bottom: #200978 dashed 5px;
+    border-left: #211200 dashed 5px;
 }
 
 p{
     color: red;
-    background-color: black;
+    /*background-color: black;*/
+    /*alteração das bordas*/
+    border-top-style: groove;
+    /*Valor tipo palavra-chave*/
+    border-top-color: salmon;
+    border-right-style: dotted;
+    border-right-color: salmon;
+    border-bottom-style: double;
+    border-bottom-color: salmon;
+    border-left-style: inset;
+    border-left-color: salmon;
+    /*Valor tipo número não negativo*/
+    border-top-width: 10px;
+    border-right-width: 10px;
+    border-bottom-width: 10px;
+    border-left-width: 10px;
+
 }
 
 .fundo{
     background-color: red;
-    margin: 2px 2px 2px 2px;
-    height: 20px;
+    margin: 15px 20px;
+    font-size: 20px;
 }
 
-.butao{
-    margin-top: 1px;
-    width: 20%;
+.botao{
+    margin: 15px 25px;
     background-color: purple;
     color: white;
-    border-radius: 20px;
+    border-radius: 10px;
+    font-size: 25em;
 }
+
+div{
+    color: #ff0000; /*hexadecimal*/
+    color: rgb(240,0,0);
+    color: rgb(2,150,1);
+    color: rgba(250,106,45,25%);
+    color: hsl(250,80%,15%);
+    color: hsla(250,80%,15%,0.8);
+}
+/*
+    Medidas relativas
+    em - relativo ao tamanho da fonte do elemento pai.
+    ex - é relativo ao tamanho da letra x minuscula da fonte do elemento.
+    px - é relativo ao tamanho da tela do dispositivo.
+    rem - é relativo ao tamanho da fonte da raiz do documento html.
+    gd - "layout-grid"
+    vw - é relativo à largura (width) da área de renderização.
+    vh - é relativo à altura (height) da área de renderização.
+    vm - é relativo à menor dimensão da área de renderização (altura ou largura).
+    ch - é relativo à largura do 0 (zero) de acordo com o tamanho da fonte.
+
+    Medidas absolutas
+    in - polegadas: 1 in = 2,54 cm
+    cm - centímetro
+    mm - milímetro
+    pt - ponto, 1 pt = 1/72 in
+    pc - pica, 1 pc = 12 pt
+
+    Porcetagem - %
+
+*/
