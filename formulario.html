@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <fieldset> <!--Destina-se a servir de container para agrupar campos-->
+            <legend>Dados Pessoais</legend> <!--Cria uma descrição para o agrupamento-->
+            <label>Nome:<!--Label implícita-->
+                <input type="text" name="nome" size="70%">
+            </label>
+            <p><label for="endereco">Endereço:</label><!--Label explícita-->
+                <input type="text" id="endereco" name="endereco" size="75%">
+            <label></p>
+                <input type="hidden" name="hora">
+            </label>
+            <label>Busca:
+                <input type="search" name="busca">
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>Preferências</legend>
+            <p>
+            <label>Telefone
+                <input type="tel" name="telefone">
+            </label>
+            <label>E-mail:
+                <input type="email" name="email" placeholder="nome@servidor.com">
+            </label>
+            <label>Senha:
+                <input type="password" name="senha" maxlength="8" minlength="3" required>
+            </label></p>
+            <p>
+            <label>Data:
+                <input type="date" name="data" disabled>
+            </label>
+            <label>Hora:
+                <input type="time" name="hora" readonly>
+            </label>
+            <label>Cor:
+                <input type="color" name="cor">
+            </label>
+            <label>Arquivo
+                <input type="file" name="arquivo">
+            </label>
+            <input type="submit" value="Enviar">
+            </p>
+            <p><input type="image" src="../html5/imagem/" alt="uma imagem">
+            <input type="reset" value="Limpar">
+            <input type="button" value="ok"></p>
+        </fieldset>
+        <fieldset>
+            <legend>Números</legend>
+            <p><input type="number" name="numeros" min="1900" max="2099" step="2"></p>
+        </fieldset>
+    </form>
+</body>
+</html>
